@@ -4,6 +4,7 @@
     justify-content: space-between;
     align-items: center;
     position: relative;
+    padding: 0 2em;
 }
 
 .cabecalho__menu-hamburguer {
@@ -63,6 +64,10 @@
     display: none;
 }
 
+.container__texto {
+    display: none;
+}
+
 .opcoes {
     display: none;
 }
@@ -117,4 +122,30 @@
     .opcoes__botao {
         display: none;
     }
+}
+
+@media screen and (min-width: 1728px) {
+    .cabecalho {
+        padding: 0 2.5em;
+    }
+
+    .container__titulo {
+        margin-right: 2em;
+    }
+
+    .container__texto {
+        display: block;
+    }
+
+    .container__link {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: var(--preto);
+    }
+
+    .opcoes {
+        margin-right: auto;
+    }
+
 }
